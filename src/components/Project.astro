@@ -1,16 +1,35 @@
 ---
-const { titulo, textoContenido, foto } = Astro.props;
+const { titulo, textoContenido, foto, share } = Astro.props;
 ---
 
 <article>
   <img src={foto.src} alt={`${titulo} Foto`} />
   <div class="projectContent">
     <h2>{titulo}</h2>
+    {
+      share && (
+        <a
+          id="share"
+          href="https://chef-claude-ashen.vercel.app/"
+          target="_blank"
+        >
+          <img src={share.src} alt="Send to page" />
+        </a>
+      )
+    }
+
     <p>{textoContenido}</p>
   </div>
 </article>
 <hr />
 <style>
+  h2 {
+    display: inline-block;
+  }
+  #share {
+    display: inline-block;
+    width: 20px;
+  }
   article {
     margin: 24px 0px;
     display: flex;
