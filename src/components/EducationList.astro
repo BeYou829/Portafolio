@@ -1,0 +1,75 @@
+---
+// Puedes importar el contenido dinámico o estático de tu portafolio si usas props o slots.
+import EducacionFoto from "../assets/mortarboard.png";
+---
+
+<section id="education">
+  <div class="container">
+    <div class="containerTitle">
+      <h2>Education</h2>
+      <img src={EducacionFoto.src} alt={`${EducacionFoto} Foto`} />
+    </div>
+
+    <div class="education-card">
+      <h3>Instituto Tecnológico de Las Américas (ITLA)</h3>
+      <p>Tecnólogo en Desarrollo de Software</p>
+      <span>2022 - Presente</span>
+    </div>
+    <div class="education-card">
+      <h3>Politécnico José María Velaz</h3>
+      <p>Desarrollador y Administrador de Aplicaciones Informáticas</p>
+      <span>2019 - 2022</span>
+    </div>
+  </div>
+</section>
+
+<style>
+  .containerTitle {
+    display: flex;
+    align-items: center;
+    gap: 1px;
+  }
+  .containerTitle img {
+    width: 48px;
+    position: relative;
+    top: 5px;
+  }
+  section {
+    margin: 0 auto;
+    padding: 0;
+    width: 80%;
+    height: 50dvh;
+    text-align: left;
+    font-family: Inter;
+  }
+
+  h2 {
+    font-size: 2rem;
+    color: #333;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    letter-spacing: 4px;
+  }
+  .education-card {
+    max-width: 900px;
+    background-color: #fff;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+  }
+  .education-card h3 {
+    font-size: 1.25rem;
+    margin: 0 0 0.5rem;
+    color: #222;
+  }
+  .education-card p {
+    margin: 0 0 0.5rem;
+    color: #555;
+    font-size: 1rem;
+  }
+  .education-card span {
+    font-size: 0.9rem;
+    color: #888;
+  }
+</style>

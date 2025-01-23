@@ -1,0 +1,51 @@
+---
+import Project from "./Project.astro";
+import CodeFoto from "../assets/layers.png";
+import ChefClaude from "../assets/ChefClaude.png";
+import HelpDesk from "../assets/helpdesk.png";
+---
+
+<section id="sectionProjects">
+  <div class="title">
+    <h2>My Recent Projects</h2>
+    <img src={CodeFoto.src} alt="" />
+  </div>
+
+  <Project
+    titulo="Chef Claude"
+    textoContenido=`Chef Claude is a responsive website which main focus in to bring you the best recipe possible with your desire ingredients.`
+    foto={ChefClaude}
+  />
+  <Project
+    titulo="IT - Help Desk Client"
+    textoContenido=`Un sistema de gestión de tickets desarrollado con .NET 8.0, ASP.NET Core y Entity Framework,
+     que permite a los usuarios crear, visualizar y gestionar solicitudes de manera eficiente.`
+    foto={HelpDesk}
+  />
+</section>
+
+<style>
+  section {
+    margin: 0 auto;
+    padding: 0;
+    width: 80%;
+    height: 50dvh;
+    text-align: left;
+    font-family: Inter;
+  }
+  h2 {
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    letter-spacing: 4px;
+    display: inline;
+  }
+  .title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .title img {
+    width: 48px;
+  }
+</style>

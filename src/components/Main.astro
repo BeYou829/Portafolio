@@ -1,0 +1,31 @@
+---
+import AsideMenu from "./AsideMenu.astro";
+import AboutMe from "./AboutMe.astro";
+import ProjectsList from "./ProjectsList.astro";
+import EducationList from "./EducationList.astro";
+import TechStackList from "./TechStackList.astro";
+import ContactForm from "./ContactForm.astro";
+---
+
+<div id="container">
+  <main>
+    <AsideMenu />
+    <div>
+      <AboutMe />
+      <ProjectsList />
+      <EducationList />
+      <TechStackList />
+      <ContactForm />
+    </div>
+  </main>
+</div>
+
+<style>
+  main {
+    display: flex;
+    background-color: #fafaf2;
+  }
+  div {
+    width: 100%;
+  }
+</style>

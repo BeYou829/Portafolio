@@ -1,0 +1,102 @@
+---
+import MiFoto from "../assets/2x2.jpg";
+import Githubfoto from "../assets/github-mark.svg";
+import XFoto from "../assets/x.svg";
+import LinkedlnFoto from "../assets/linkedln.svg";
+import CV from "../assets/CV.pdf";
+---
+
+<section>
+  <img src={MiFoto.src} alt="Mi photo" />
+  <nav>
+    <ul>
+      <a href="/">
+        <li>Home</li>
+      </a>
+      <a href="#sectionProjects">
+        <li>Projects</li>
+      </a>
+      <a href="#education">
+        <li>Education</li>
+      </a>
+      <a href="#tech-stack">
+        <li>Tech Stacks</li>
+      </a>
+      <a href={CV} download="CV.pdf">
+        <li>CV</li>
+      </a>
+      <a href="#sectionContact">
+        <li>Contact</li>
+      </a>
+    </ul>
+  </nav>
+  <div>
+    <a href=`https:github.com/BeYou829
+      ` target="_blank">
+      <img src={Githubfoto.src} alt="Github Foto" />
+    </a>
+    <a href="https://x.com/erodriguez829" target="_blank">
+      <img src={XFoto.src} alt="X Foto" />
+    </a>
+    <a
+      href="https://www.linkedin.com/in/engel-rodriguez-a369a622b"
+      target="_blank"
+    >
+      <img src={LinkedlnFoto.src} alt="Linkedln Foto" />
+    </a>
+  </div>
+</section>
+
+<style>
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    height: 100vh;
+    max-width: 240px;
+    width: 17%;
+    position: sticky;
+    top: 0;
+    padding: 1%;
+
+    background-color: #f1e9da;
+    box-shadow: 7px -1px 15px 1px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 7px -1px 15px 1px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 7px -1px 15px 1px rgba(0, 0, 0, 0.2);
+  }
+  img {
+    width: 167px;
+    border-radius: 50%;
+    object-fit: contain;
+  }
+  nav {
+    margin-top: 24px;
+  }
+  h2 {
+    font-size: 1.4.em;
+    font-weight: bolder;
+  }
+  nav {
+    width: 100%;
+  }
+  nav > ul > a > li {
+    padding: 8px;
+    transition: 0.3s ease-in-out;
+  }
+  nav > ul > a > li:hover {
+    background-color: #fafaf2;
+  }
+
+  div {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    position: absolute;
+    bottom: 1%;
+    text-align: center;
+  }
+  div > a > img {
+    width: 32px;
+  }
+</style>

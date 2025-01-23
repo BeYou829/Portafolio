@@ -1,0 +1,40 @@
+---
+// Componente para una tarjeta de tecnología
+const { imgSrc, altText, techName } = Astro.props;
+---
+
+<div class="tech-card">
+  <img src={imgSrc} alt={altText} />
+  <span>{techName}</span>
+</div>
+
+<style>
+  .tech-card {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition:
+      transform 0.3s ease,
+      box-shadow 0.3s ease;
+    max-width: 200px;
+    margin: 0.5rem;
+  }
+
+  .tech-card img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 0.5rem;
+  }
+
+  .tech-card span {
+    font-size: 1rem;
+    color: #555;
+  }
+
+  .tech-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  }
+</style>

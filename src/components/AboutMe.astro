@@ -1,0 +1,67 @@
+---
+import CV from "../assets/CV.pdf";
+---
+
+<section id="aboutMe">
+  <p>Hey There ✌</p>
+  <h1 class="text-6xl font-bold">I'm Engel Rodriguez</h1>
+  <h2 class="text-3xl font-bold">Software Developer</h2>
+  <br />
+  <p>
+    Back-End Developer specialized in computer systems, focusing on ASP.NET Core
+    for creating, maintaining, and deploying robust and scalable web solutions.
+    Experienced in mobile development with Ionic Angular/React, delivering
+    functional and efficient user experiences. Proficient in React and
+    JavaScript for front-end development, ensuring dynamic and interactive
+    interfaces.
+  </p>
+  <br />
+  <div>
+    <a href="#sectionContact">
+      <button id="contactMe">Contact Me</button>
+    </a>
+    <a href={CV} download="CV.pdf"><button>CV</button></a>
+  </div>
+</section>
+<style>
+  section {
+    margin: 0 auto;
+    padding: 4% 0 0;
+    width: 80%;
+    height: 45dvh;
+    text-align: left;
+    font-family: Inter;
+  }
+  p,
+  h2 {
+    font-style: italic;
+  }
+  p {
+    max-width: 968px;
+  }
+  div {
+    display: flex;
+    gap: 12px;
+  }
+  button {
+    padding: 6px;
+    width: 125px;
+    background: #000;
+    color: #fff;
+    border-radius: 4px;
+  }
+  button:hover {
+    opacity: 0.8;
+    transition: 0.3s ease;
+  }
+  #contactMe {
+    background: #0081af;
+  }
+  button:last-child {
+    background: #fafaf2;
+    color: #000;
+    box-shadow: 3px 3px 10px -2px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 3px 3px 10px -2px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 3px 3px 10px -2px rgba(0, 0, 0, 0.5);
+  }
+</style>

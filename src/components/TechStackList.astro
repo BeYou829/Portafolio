@@ -1,0 +1,61 @@
+---
+import TechStackCard from "./TechStackCard.astro";
+import Dotnet from "../assets/dotnet.svg";
+import Javascript from "../assets/javascript.svg";
+import Ionic from "../assets/ionic.svg";
+import Angular from "../assets/angular.svg";
+import Css3 from "../assets/css3.svg";
+import Html5 from "../assets/html-5.svg";
+---
+
+<section id="tech-stack">
+  <div class="container">
+    <h2>Tech Stack</h2>
+    <div class="tech-grid">
+      <TechStackCard imgSrc={Dotnet.src} altText=".NET" techName=".NET" />
+      <TechStackCard
+        imgSrc={Angular.src}
+        altText="Angular"
+        techName="Angular"
+      />
+      <TechStackCard imgSrc={Ionic.src} altText="Ionic" techName="Ionic" />
+      <TechStackCard
+        imgSrc={Javascript.src}
+        altText="JavaScript"
+        techName="JavaScript"
+      />
+      <TechStackCard imgSrc={Html5.src} altText="HTML5" techName="HTML5" />
+      <TechStackCard imgSrc={Css3.src} altText="CSS3" techName="CSS3" />
+    </div>
+  </div>
+</section>
+
+<style>
+  section {
+    margin: 0 auto;
+    padding: 0;
+    width: 80%;
+    height: max-content;
+    text-align: left;
+    font-family: Inter;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    font-size: 2rem;
+    color: #333;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+  }
+
+  .tech-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1rem;
+    justify-items: center;
+  }
+  .container {
+    max-width: 900px;
+  }
+</style>

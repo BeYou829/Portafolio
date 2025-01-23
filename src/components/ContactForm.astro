@@ -1,0 +1,80 @@
+---
+const id = import.meta.env.VITE_FORMSPREE_URL;
+---
+
+<section id="sectionContact">
+  <h2>Contact Me</h2>
+  <form action={id} method="POST">
+    <label>
+      Your email:
+      <input type="email" name="email" required />
+    </label>
+    <label>
+      Your message:
+      <textarea name="message" required></textarea>
+    </label>
+    <button type="submit">Send</button>
+  </form>
+</section>
+
+<style>
+  section {
+    margin: 0 auto;
+    padding: 0;
+    width: 80%;
+    height: 50dvh;
+    text-align: left;
+    font-family: Inter;
+  }
+
+  h2 {
+    font-size: 2rem;
+    color: #333;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 900px;
+  }
+
+  label {
+    font-size: 1rem;
+    color: #555;
+  }
+
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    box-sizing: border-box;
+  }
+
+  button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  button:hover {
+    background-color: #0056b3;
+  }
+
+  textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+</style>
