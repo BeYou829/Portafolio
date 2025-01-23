@@ -1,48 +1,25 @@
-# Astro Starter Kit: Basics
+# Mi Portafolio de Desarrollo
 
-```sh
-npm create astro@latest -- --template basics
-```
+¡Bienvenido a mi portafolio! Este sitio web es una muestra de mi trabajo como desarrollador de software. Aquí encontrarás información sobre los proyectos que he desarrollado, mis habilidades técnicas y cómo puedes contactarme.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+## Descripción del Proyecto
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Este es un portafolio personal creado para destacar mi experiencia como desarrollador. Utiliza tecnologías modernas como **Astro** para el desarrollo de sitios rápidos y optimizados, y **React** para los componentes interactivos. A través de este sitio, los visitantes pueden conocer los proyectos en los que he trabajado, aprender sobre las tecnologías que domino y ponerse en contacto conmigo.
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+## Funcionalidades
 
-## 🚀 Project Structure
+- **Proyectos**: Sección que muestra una lista de los proyectos que he desarrollado, con detalles sobre las tecnologías utilizadas y enlaces a las versiones en vivo o repositorios.
+- **Habilidades**: Muestra las tecnologías que domino, representadas por iconos interactivos.
+- **Formulario de Contacto**: Los visitantes pueden ponerse en contacto conmigo mediante un formulario integrado con Formspree.
+- **Responsive**: El sitio está diseñado para funcionar bien en dispositivos móviles y de escritorio, ofreciendo una experiencia adaptada a cada pantalla.
 
-Inside of your Astro project, you'll see the following folders and files:
+## Tecnologías Utilizadas
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+- **Astro**: Para la creación del sitio web optimizado.
+- **React**: Para componentes interactivos.
+- **CSS**: Para los estilos del sitio.
+- **Formspree**: Para el formulario de contacto.
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+---
 
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Gracias por visitar mi portafolio. Si tienes alguna pregunta o deseas discutir una oportunidad, no dudes en ponerte en contacto conmigo a través del formulario.
