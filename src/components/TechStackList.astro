@@ -6,6 +6,7 @@ import Ionic from "../assets/ionic.svg";
 import Angular from "../assets/angular.svg";
 import Css3 from "../assets/css3.svg";
 import Html5 from "../assets/html-5.svg";
+import React from "../assets/react.svg";
 ---
 
 <section id="tech-stack">
@@ -26,6 +27,7 @@ import Html5 from "../assets/html-5.svg";
       />
       <TechStackCard imgSrc={Html5.src} altText="HTML5" techName="HTML5" />
       <TechStackCard imgSrc={Css3.src} altText="CSS3" techName="CSS3" />
+      <TechStackCard imgSrc={React.src} altText="React" techName="React" />
     </div>
   </div>
 </section>
@@ -51,7 +53,7 @@ import Html5 from "../assets/html-5.svg";
 
   .tech-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1rem;
     justify-items: center;
   }
